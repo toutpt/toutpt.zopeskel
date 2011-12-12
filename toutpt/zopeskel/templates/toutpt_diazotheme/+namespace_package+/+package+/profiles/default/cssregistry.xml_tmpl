@@ -7,8 +7,5 @@
  <stylesheet
     id="++theme++${namespace_package}.${package}/css/theme.css"
     expression="request/HTTP_X_THEME_ENABLED | nothing"/>
- <stylesheet
-    id="public.css"
-    expression="not:request/HTTP_X_THEME_ENABLED | nothing"/>
 
 </object>
