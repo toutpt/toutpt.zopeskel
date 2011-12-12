@@ -116,7 +116,7 @@ q {
     font-size: 80%;
     background: #ddd;
     /* ensure top navigation dont touches portlets, content etc.. #10491 */
-    margin: 0 0 1em 0;
+    margin: 0 10px 1em 10px;
 }
 #portal-globalnav li {
 }
@@ -181,6 +181,8 @@ q {
 }
 
 #portal-searchbox {
+    position:relative;
+    z-index: 10;
     float: right;
     text-align: left;
     clear: right;
@@ -957,6 +959,9 @@ dl.error dd {
 /* @group Pulldown menus */
 
 /* @group Personal tools pulldown */
+#portal-personaltools{
+    z-index: 15;
+}
 #portal-personaltools dl {
 }
 #portal-personaltools dt {
