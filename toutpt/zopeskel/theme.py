@@ -29,7 +29,6 @@ class Theme(plone3_theme.Plone3Theme):
         #remove setup.cfg
         path = os.path.join(output_dir)
         try:
-            import pdb;pdb.set_trace()
             os.remove(os.path.join(path, 'setup.cfg'))
         except OSError, e:
             msg = """WARNING: Could not find setup.cfg: %s"""
@@ -41,4 +40,11 @@ class Theme(plone3_theme.Plone3Theme):
                       os.path.join(path, '.gitignore'))
         except OSError, e:
             msg = """WARNING: Could not create .gitignore file: %s"""
+            self.post_run_msg = msg % str(e)
+
+        #remove README.txt (use README.rst)
+        try:
+            os.remove(os.path.join(path, 'README.txt'))
+        except OSError, e:
+            msg = """WARNING: Could not remove README.txt: %s"""
             self.post_run_msg = msg % str(e)
