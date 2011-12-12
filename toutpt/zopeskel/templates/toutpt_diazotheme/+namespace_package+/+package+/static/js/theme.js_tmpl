@@ -1,4 +1,4 @@
-}
+
 function initialize${namespace_package}${package}(){
 
 }
