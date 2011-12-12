@@ -10,8 +10,8 @@
   <five:registerPackage package="." initialize=".initialize" />
 
   <include package=".browser" />
+
   <cmf:registerDirectory name="${namespace_package}_${package}_custom"/>
-  <include file="profiles.zcml" />
   <i18n:registerTranslations directory="locales" />
 
 #if str($add_profile) == 'True'
@@ -24,5 +24,7 @@
       />
 
 #end if
+
+  <plone:static directory="static" type="theme" />
 
 </configure>
