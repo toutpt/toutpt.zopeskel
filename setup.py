@@ -6,7 +6,7 @@ version = '1.0'
 setup(name='toutpt.zopeskel',
       version=version,
       description="",
-      long_description=open("README.txt").read() + "\n" +
+      long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
       # http://pypi.python.org/pypi?:action=list_classifiers
@@ -14,10 +14,10 @@ setup(name='toutpt.zopeskel',
         "Framework :: Plone",
         "Programming Language :: Python",
         ],
-      keywords='',
-      author='',
-      author_email='',
-      url='http://svn.plone.org/svn/collective/',
+      keywords='oaster zopeskel',
+      author='JeanMichel FRANCOIS aka toutpt',
+      author_email='toutpt@gmail.com',
+      url='https://github.com/toutpt/toutpt.zopeskel',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['toutpt'],
@@ -26,6 +26,7 @@ setup(name='toutpt.zopeskel',
       install_requires=[
           'setuptools',
           'PasteScript',
+          'ZopeSkel<3.0',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
