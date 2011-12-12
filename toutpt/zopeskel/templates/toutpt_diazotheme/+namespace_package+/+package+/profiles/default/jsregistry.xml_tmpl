@@ -4,14 +4,7 @@
  <javascript
     id="++theme++${namespace_package}.${package}/js/theme.js"/>
 
-<!-- If you wanna use cutting edge technologies, un comment those:
-
- <javascript
-    id="++theme++${namespace_package}.${package}/js/selectivizr.js"
-     conditionalcomment="(gte IE 6)&amp;(lte IE 8)"/>
-
  <javascript
     id="++theme++${namespace_package}.${package}/js/modernizr.js"/>
 
--->
 </object>

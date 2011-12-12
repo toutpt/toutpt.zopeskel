@@ -11,10 +11,13 @@ Templates
 toutpt_diazotheme
 -----------------
 
-This create a Plone theme using diazo_. The theme is based on 960 css
-and provide a copy of sunburst's public.css into static/css/theme.css
+Create a Plone theme using plone.app.theming.
 
-public.css and column.css (aka deco) are made empty.
+The theme is a copy of sunburst theme but using 960 css.
+
+The package profile install the theme, activate it, and reset public.css and
+column.css (aka deco).  It loads all resources in corresponding registry plus
+modernizr_ in the jsregistry.
 
 Credits
 =======
@@ -38,3 +41,4 @@ Contributors
 .. |makinacom| image:: http://depot.makina-corpus.org/public/logo.gif
 .. _makinacom:  http://www.makina-corpus.com
 .. _ZopeSkel: http://pypi.python.org/pypi/ZopeSkel
+.. modernizr: http://modernizr.com
