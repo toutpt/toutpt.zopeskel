@@ -12,6 +12,7 @@ class Theme(plone3_theme.Plone3Theme):
     vars = copy.deepcopy(plone3_theme.Plone3Theme.vars)
     get_var(vars, 'description').default = 'An installable diazo theme for Plone 4'
     get_var(vars, 'skinbase').default = 'Sunburst Theme'
+    get_var(vars, 'url').default =  'https://github.com/collective/'
 
     vars.remove(get_var(vars, 'empty_styles'))
     vars.remove(get_var(vars, 'include_doc'))
