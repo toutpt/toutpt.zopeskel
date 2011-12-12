@@ -20,7 +20,7 @@
     <copy attributes="id dir" css:content="body" css:theme="body" />
 
 <!-- HEADER -->
-    <append css:content="#portal-logo" css:theme="#portal-logo"/>
+    <append css:content="#portal-logo" css:theme="#portal-logo-wrapper"/>
     <append css:content="#portal-languageselector" css:theme="#tools" />
     <append css:content="#portal-personaltools-wrapper" css:theme="#tools"/>
     <append css:content='#portal-searchbox' css:theme='#tools' />
