@@ -25,14 +25,13 @@ setup(name='toutpt.zopeskel',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'PasteScript',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
       # -*- Entry points: -*-
 
-      [z3c.autoinclude.plugin]
-      target = plone
+      [paste.paster_create_template]
+      toutpt_diazotheme = toutpt.zopeskel.theme:Theme
       """,
-      setup_requires=["PasteScript"],
-      paster_plugins=["ZopeSkel"],
       )

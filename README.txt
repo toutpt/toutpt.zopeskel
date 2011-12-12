@@ -1,6 +1,10 @@
 Introduction
 ============
 
+This package contains at the moment some templates for Plone.
 
 
-This product may contain traces of nuts.
+toutpt_diazotheme
+-----------------
+
+This create an egg with 

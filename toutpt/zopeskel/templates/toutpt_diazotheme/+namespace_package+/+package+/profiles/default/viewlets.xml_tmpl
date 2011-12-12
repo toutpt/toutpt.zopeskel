@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<object>
+  <order manager="plone.portalfooter" skinname="$skinname">
+<!-- EXAMPLE
+    <viewlet name="${namespace_package}.someviewlet"
+             insert-before="*" />
+-->
+  </order>
+
+  <hidden manager="plone.portalheader" skinname="$skinname">
+<!-- EXAMPLE:
+    <viewlet name="plone.global_sections" />
+-->
+  </hidden>
+
+</object>

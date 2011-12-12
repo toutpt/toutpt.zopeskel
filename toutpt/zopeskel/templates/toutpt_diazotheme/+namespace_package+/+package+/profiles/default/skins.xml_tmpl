@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<object name="portal_skins" allow_any="False" cookie_persistence="False"
+   default_skin="$skinname">
+
+ <object name="${namespace_package}_${package}_custom"
+    meta_type="Filesystem Directory View"
+    directory="${namespace_package}.${package}:skins/${namespace_package}_${package}_custom"/>
+
+ <skin-path name="$skinname" based-on="$skinbase">
+  <layer name="${namespace_package}_${package}_custom"
+     insert-after="custom"/>
+ </skin-path>
+
+</object>
