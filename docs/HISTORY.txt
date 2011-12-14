@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1 (unreleased)
+1.1 (2011-12-14)
 ----------------
 
 - add toutpt_collectivejs template
