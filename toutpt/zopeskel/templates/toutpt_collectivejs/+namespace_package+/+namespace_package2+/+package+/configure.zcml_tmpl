@@ -1,0 +1,20 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="${namespace_package}.${namespace_package2}.${package}">
+
+  <browser:resourceDirectory
+    name="${namespace_package}.${namespace_package2}.$package"
+    directory="resources"
+    />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="${namespace_package}.${namespace_package2}.${package}"
+      directory="profiles/default"
+      description='Extension profile for ${namespace_package}.${namespace_package2}.${package}.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+</configure>

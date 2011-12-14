@@ -1,0 +1,6 @@
+<layers>
+<!-- uncomment to activate
+    <layer name="${namespace_package}.${namespace_package2}.${package}"
+           interface="${namespace_package}.${namespace_package2}.${package}.interfaces.ILayer" />
+-->
+</layers>
