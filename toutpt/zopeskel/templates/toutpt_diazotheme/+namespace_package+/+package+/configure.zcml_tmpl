@@ -25,6 +25,7 @@
 
 #end if
 
-  <plone:static directory="static" type="theme" />
+  <plone:static directory="static" type="theme" 
+    name="$skinname" />
 
 </configure>
