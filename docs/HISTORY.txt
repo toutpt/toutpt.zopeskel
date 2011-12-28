@@ -5,8 +5,8 @@ Changelog
 1.2 (unreleased)
 ----------------
 
-- Nothing changed yet.
-
+- collectivejs: add z3c.autoinclude
+_ diazotheme: add skinname to static directory.
 
 1.1 (2011-12-14)
 ----------------
