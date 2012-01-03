@@ -1,0 +1,4 @@
+<layers>
+    <layer name="${namespace_package}.${package}"
+           interface="${namespace_package}.${package}.browser.interfaces.ILayer" />
+</layers>

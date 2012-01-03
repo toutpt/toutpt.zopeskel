@@ -1,0 +1,31 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="${namespace_package}.${package}">
+
+  <interface
+      interface=".interfaces.ILayer"
+      name="${namespace_package}.${package}"
+      />
+  
+  
+  <!-- EXAMPLE:
+  <browser:viewlet
+      name="${namespace_package}.someviewlet"
+      manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+      class=".viewlets.MyViewlet"
+      layer=".interfaces.ILayer"
+      permission="zope2.View"
+      />
+  <include package="plone.app.contentmenu" />
+  <browser:page
+      name="myview"
+      menu="plone_displayviews"
+      title="Galleria"
+      class=".myfile.MyView"
+      layer=".interfaces.ILayer"
+      permission="zope2.View"
+      />
+  -->
+
+</configure>
