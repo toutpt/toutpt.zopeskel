@@ -12,7 +12,7 @@ Changelog
 ----------------
 
 - collectivejs: add z3c.autoinclude
-_ diazotheme: add skinname to static directory.
+- diazotheme: add skinname to static directory.
 
 1.1 (2011-12-14)
 ----------------
@@ -23,3 +23,5 @@ _ diazotheme: add skinname to static directory.
 ----------------
 
 - Initial release
+
+
