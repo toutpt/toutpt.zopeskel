@@ -6,7 +6,7 @@
   <interface
       interface=".interfaces.IThemeSpecific"
       type="zope.publisher.interfaces.browser.IBrowserSkinType"
-      name="$skinname"
+      name="${namespace_package}.${package}"
       />
   
   <include package="plone.app.contentmenu" /> 

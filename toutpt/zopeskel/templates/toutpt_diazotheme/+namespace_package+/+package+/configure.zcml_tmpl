@@ -7,8 +7,6 @@
     xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="${namespace_package}.${package}">
 
-  <five:registerPackage package="." initialize=".initialize" />
-
   <include package=".browser" />
 
   <cmf:registerDirectory name="${namespace_package}_${package}_custom"/>
@@ -17,15 +15,15 @@
 #if str($add_profile) == 'True'
   <genericsetup:registerProfile
       name="default"
-      title="$skinname"
+      title="${namespace_package}.${package}"
       directory="profiles/default"
       description='Extension profile for the "${skinname}" Plone theme.'
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
-
+  <include package=".upgrades" />
 #end if
 
   <plone:static directory="static" type="theme" 
-    name="$skinname" />
+    name="${namespace_package}.${package}" />
 
 </configure>

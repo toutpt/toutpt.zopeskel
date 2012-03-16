@@ -5,8 +5,8 @@ Changelog
 1.3 (unreleased)
 ----------------
 
-- Nothing changed yet.
-
+- add upgrades for profile to all skels
+- fix missing initialize
 
 1.2 (2011-12-28)
 ----------------

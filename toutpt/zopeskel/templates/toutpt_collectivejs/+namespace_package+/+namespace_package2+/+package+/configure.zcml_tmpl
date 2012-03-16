@@ -9,6 +9,8 @@
     directory="resources"
     />
 
+  <include package=".upgrades"/>
+
   <genericsetup:registerProfile
       name="default"
       title="${namespace_package}.${namespace_package2}.${package}"
