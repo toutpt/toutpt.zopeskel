@@ -5,7 +5,7 @@ version = '1.3.3.dev0'
 
 setup(name='toutpt.zopeskel',
       version=version,
-      description="",
+      description="A set of skels for Plone dev",
       long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
@@ -13,8 +13,9 @@ setup(name='toutpt.zopeskel',
       classifiers=[
         "Framework :: Plone",
         "Programming Language :: Python",
+        "Intended Audience :: Developers",
         ],
-      keywords='oaster zopeskel',
+      keywords='paster Plone zopeskel diazo',
       author='JeanMichel FRANCOIS aka toutpt',
       author_email='toutpt@gmail.com',
       url='https://github.com/toutpt/toutpt.zopeskel',
