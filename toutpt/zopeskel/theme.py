@@ -48,3 +48,8 @@ class Theme(plone3_theme.Plone3Theme):
         except OSError, e:
             msg = """WARNING: Could not remove README.txt: %s"""
             self.post_run_msg = msg % str(e)
+
+class BootstrapTheme(Theme):
+    """diazo theme based on bootstrap"""
+    _template_dir = "templates/toutpt_diazobootstrap"
+    summary= u"A diazo theme based on twitter's bootstrap"
