@@ -15,8 +15,8 @@
 
 <!--  RESOURCES -->
     <replace css:theme="title" css:content="title" />
-    <after theme-children="/html/head" content="/html/head/link | /html/head/style" />
-    <after theme-children="/html/head" content="/html/head/script" />
+    <before theme-children="/html/head" content="/html/head/link | /html/head/style" />
+    <before theme-children="/html/head" content="/html/head/script" />
     <merge attributes="class" css:content="body" css:theme="body" />
     <copy attributes="id dir" css:content="body" css:theme="body" />
 
