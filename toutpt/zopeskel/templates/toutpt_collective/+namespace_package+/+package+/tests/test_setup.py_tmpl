@@ -1,28 +1,13 @@
-"""This is an integration "unit" test. It uses PloneTestCase, but does not
-use doctest syntax.
-
-You will find lots of examples of this type of test in CMFPlone/tests, for 
-example.
-"""
-
+import unittest2 as unittest
 from ${namespace_package}.${package}.tests import base
 
-class TestSetup(base.TestCase):
-    """The name of the class should be meaningful. This may be a class that
-    tests the installation of a particular product.
+class TestSetup(base.IntegrationTestCase):
+    """We tests the setup (install) of the addons. You should check all
+    stuff in profile are well activated (browserlayer, js, content types, ...)
     """
 
-    def setUp(self):
-        super(TestSetup, self).setUp()
-        self.portal_types = self.portal.portal_types
-
-    def beforeTearDown(self):
-        pass
-
-    def test_view_methods(self):
-        for t in ('Link', 'Folder', 'Topic'):
-            views = self.portal_types.getTypeInfo(t).view_methods
-#            self.failUnless("my_view" in views)
+    def test_xxx(self):
+        self.assertTrue(False)
 
 def test_suite():
-   return base.build_test_suite((TestSetup,))
+    return unittest.defaultTestLoader.loadTestsFromName(__name__)

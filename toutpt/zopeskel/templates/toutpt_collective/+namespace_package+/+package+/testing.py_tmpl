@@ -1,0 +1,17 @@
+from plone.testing import z2
+
+from plone.app.testing import *
+import ${namespace_package}.${package}
+
+FIXTURE = PloneWithPackageLayer(zcml_filename="configure.zcml",
+                                zcml_package=${namespace_package}.${package},
+                                additional_z2_products=[],
+                                gs_profile_id='${namespace_package}.${package}:default',
+                                name="${namespace_package}.${package}:FIXTURE")
+
+INTEGRATION = IntegrationTesting(bases=(FIXTURE,),
+                        name="${namespace_package}.${package}:Integration")
+
+FUNCTIONAL = FunctionalTesting(bases=(FIXTURE,),
+                        name="${namespace_package}.${package}:Functional")
+
