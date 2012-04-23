@@ -3,7 +3,6 @@ import unittest2 as unittest
 from zope import interface
 from plone.app import testing
 from ${namespace_package}.${package} import testing
-from ${namespace_package}.${package}.tests import utils
 
 class UnitTestCase(unittest.TestCase):
 
