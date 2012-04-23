@@ -3,8 +3,11 @@
 @import "layouts.less";
 @import "grid.less";
 @import "responsive.less";
+@import "theme-variables.less";
 
-/* Landscape phones and down */
+/*****************
+ 0 -> 480
+ *****************/
 @media (max-width: 480px) {
   /* make some content disappear*/
   #portal-globalnav-wrapper,
@@ -13,16 +16,22 @@
     display: none;
   }
 }
- 
-/* Landscape phone to portrait tablet */
+
+/*****************
+ 0 -> 768
+ *****************/
 @media (max-width: 768px) {
 }
- 
- /* Portrait tablet to landscape and desktop */
+
+/*****************
+ 768 -> 980
+ *****************/
 @media (min-width: 768px) and (max-width: 980px) {
 }
- 
-/* Large desktop */
+
+/*****************
+ 1200 -> ++
+ *****************/
 @media (min-width: 1200px) {
 }
 
