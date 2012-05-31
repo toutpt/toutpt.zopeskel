@@ -1,4 +1,0 @@
-<layers>
-    <layer name="$skinname"
-           interface="${namespace_package}.${package}.browser.interfaces.IThemeSpecific" />
-</layers>

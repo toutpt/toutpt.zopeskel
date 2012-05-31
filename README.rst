@@ -14,16 +14,26 @@ An example of buildout can be found at https://github.com/toutpt/mypythontools
 Templates
 =========
 
-toutpt_diazotheme
------------------
+toutpt_diazo960
+---------------
 
 Create a Plone theme using plone.app.theming.
 
-The theme is a copy of sunburst theme but using 960 css.
+The theme is pure Diazo theme using 960 css.
 
-The package profile install the theme, activate it, and reset public.css and
-column.css (aka deco).  It loads all resources in corresponding registry plus
-modernizr_ in the jsregistry.
+The package profile install the theme, activate it, and unactivate column.css
+(aka deco). It loads all resources in corresponding registry.
+
+toutpt_diazoboostrap
+--------------------
+
+Create a Plone theme using plone.app.theming.
+
+The theme is pure Diazo theme using twitter's boostrap grid (responsive mode).
+
+The package profile install the theme, activate it, and unactivate column.css
+(aka deco) and mobile.css. It loads all resources in corresponding registry
+and override the 'main_template' to reset the viewport.
 
 toutpt_collectivejs
 -------------------

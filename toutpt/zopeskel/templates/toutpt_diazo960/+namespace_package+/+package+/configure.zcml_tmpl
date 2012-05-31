@@ -7,10 +7,11 @@
     xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="${namespace_package}.${package}">
 
-  <include package=".browser" />
+  <include package=".browser"/>
+  <include file="upgrades.zcml"/>
 
   <cmf:registerDirectory name="${namespace_package}_${package}_custom"/>
-  <i18n:registerTranslations directory="locales" />
+  <i18n:registerTranslations directory="locales"/>
 
 #if str($add_profile) == 'True'
   <genericsetup:registerProfile
@@ -24,6 +25,6 @@
 #end if
 
   <plone:static directory="static" type="theme" 
-    name="${namespace_package}.${package}" />
+    name="${namespace_package}.${package}"/>
 
 </configure>

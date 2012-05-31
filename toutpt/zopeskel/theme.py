@@ -7,7 +7,7 @@ from zopeskel.plone import Plone
 
 class Theme(plone3_theme.Plone3Theme):
     """diazo theme"""
-    _template_dir = "templates/toutpt_diazotheme"
+    _template_dir = "templates/toutpt_diazo960"
     summary= u"A diazo theme based on 960 css"
 
     use_local_commands = False #or setup.cfg will be re created

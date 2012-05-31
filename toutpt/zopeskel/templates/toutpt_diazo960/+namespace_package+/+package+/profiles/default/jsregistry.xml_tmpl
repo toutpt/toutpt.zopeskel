@@ -4,7 +4,4 @@
  <javascript
     id="++theme++${namespace_package}.${package}/js/theme.js"/>
 
- <javascript
-    id="++theme++${namespace_package}.${package}/js/modernizr.js"/>
-
 </object>
