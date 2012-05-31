@@ -6,7 +6,8 @@ Changelog
 ------------------
 
 - collective: Following conventions for testing + use PloneWithPackageLayer
-- add diazobootstrap skel: a diazo theme based on twitter bootstrap responsive
+- add toutpt_diazobootstrap skel: a diazo theme based on twitter bootstrap responsive
+- rename toutpt_diazotheme skel in toutpt_diazo960
 
 1.3.2 (2012-03-20)
 ------------------
