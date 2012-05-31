@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<object name="portal_css">
+
+ <stylesheet
+    id="++theme++${namespace_package}.${package}/css/theme.css"
+    expression="request/HTTP_X_THEME_ENABLED | nothing"
+    applyPrefix="1"
+    media=""/>
+
+ <!-- columns.css is deco grid but conflict with bootstrap grid -->
+ <stylesheet id="columns.css" enabled="0"/>
+ <!-- mobile.css conflict because it needs sunburst's viewport -->
+ <stylesheet id="mobile.css" enabled="0"/>
+
+</object>
