@@ -3,12 +3,12 @@
     i18n_domain="${namespace_package}.${package}">
 
     <upgradeStep
-        source="1000"
+        source="*"
         destination="1001"
         title="Upgrade"
         description=""
         profile="${namespace_package}.${package}:default"
-        handler=".v1000_to_1001.upgrade_1000_to_1001"
+        handler=".upgrades.common"
         />
 
 </configure>

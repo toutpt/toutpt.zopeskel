@@ -1,0 +1,15 @@
+/* Sunburst Theme fixes to works with 960css */
+#portal-globalnav{
+    margin: 0 10px 1em 10px;
+}
+#portal-searchbox{
+    position: relative;
+    z-index: 10;
+}
+#portal-personaltools{
+    z-index: 15;
+}
+/* THEME */
+#portal-logo img{
+    width: 100%;
+}

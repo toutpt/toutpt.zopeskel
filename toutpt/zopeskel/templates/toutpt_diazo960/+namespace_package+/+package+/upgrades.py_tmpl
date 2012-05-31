@@ -2,6 +2,6 @@ from Products.CMFCore.utils import getToolByName
 PROFILEID = 'profile-${namespace_package}.${package}:default'
 
 
-def upgrade_1000_to_1001(context):
+def common(context):
     setup = getToolByName(context, 'portal_setup')
     setup.runAllImportStepsFromProfile(PROFILEID)

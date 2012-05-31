@@ -6,4 +6,4 @@
                    title view/navigation_root_title"
    i18n:domain="plone"
    i18n:attributes="title">
-    <img alt="logo" src="//++theme++${namespace_package}.${package}/images/logo.png"/></a>
+    <img alt="logo" src="++theme++${namespace_package}.${package}/images/logo.png"/></a>
