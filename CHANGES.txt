@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.3.3 (unreleased)
+1.3.3 (2012-05-31)
 ------------------
 
 - collective: Following conventions for testing + use PloneWithPackageLayer
