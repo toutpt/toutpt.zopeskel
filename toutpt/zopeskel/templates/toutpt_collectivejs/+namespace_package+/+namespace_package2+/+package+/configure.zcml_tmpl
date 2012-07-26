@@ -9,7 +9,7 @@
     directory="resources"
     />
 
-  <include package=".upgrades"/>
+  <include file="upgrades.zcml"/>
 
   <genericsetup:registerProfile
       name="default"

@@ -19,8 +19,7 @@
       description='Extension profile'
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
-  <include package=".upgrades" />
-
+  <include file="upgrades.zcml" />
 #end if
 
 </configure>
