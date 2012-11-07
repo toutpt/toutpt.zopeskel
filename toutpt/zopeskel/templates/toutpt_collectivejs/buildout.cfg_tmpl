@@ -3,3 +3,5 @@ extends =
     https://raw.github.com/collective/buildout.plonetest/master/test-4.x.cfg
 package-name = ${namespace_package}.${namespace_package2}.${package}
 
+[instance]
+zcml+=${namespace_package}.${namespace_package2}.${package}.example
