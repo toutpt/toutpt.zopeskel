@@ -7,7 +7,7 @@
   <browser:page
     name="example.${namespace_package}.${namespace_package2}.$package"
     for="*"
-    class=".$package.Example"
+    class=".${package}.Example"
     template="*package.pt"
     permission="zope2.View"
     />
