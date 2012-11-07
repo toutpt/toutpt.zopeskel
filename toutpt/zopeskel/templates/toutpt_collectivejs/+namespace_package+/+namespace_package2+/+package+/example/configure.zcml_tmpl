@@ -1,0 +1,15 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="${namespace_package}.${namespace_package2}.${package}">
+
+  <browser:page
+    name="example.${namespace_package}.${namespace_package2}.$package"
+    for="*"
+    class=".$package.Example"
+    template="*package.pt"
+    permission="zope2.View"
+    />
+
+</configure>

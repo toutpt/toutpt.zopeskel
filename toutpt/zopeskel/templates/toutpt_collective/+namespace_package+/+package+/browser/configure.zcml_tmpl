@@ -19,6 +19,7 @@
       />
   <include package="plone.app.contentmenu" />
   <browser:page
+      for="*"
       name="myview"
       menu="plone_displayviews"
       title="Galleria"
