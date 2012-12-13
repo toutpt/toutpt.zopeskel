@@ -30,8 +30,8 @@ setup(name=${repr($project)},
           'setuptools',
           # -*- Extra requirements: -*-
       ],
-      extras_require = dict(
-          tests=['plone.app.testing'],
+      extras_require=dict(
+          test=['plone.app.testing'],
       ),
       entry_points="""
       # -*- Entry points: -*-

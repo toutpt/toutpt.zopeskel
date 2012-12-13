@@ -2,4 +2,4 @@
 extends =
     https://raw.github.com/collective/buildout.plonetest/master/test-4.x.cfg
 package-name = ${namespace_package}.${package}
-package-extras = [tests]
+package-extras = [test]
