@@ -1,20 +1,21 @@
 import transaction
 import unittest2 as unittest
 from zope import interface
-from plone.app import testing
 from ${namespace_package}.${package} import testing
+
 
 class UnitTestCase(unittest.TestCase):
 
     def setUp(self):
         pass
 
+
 class IntegrationTestCase(unittest.TestCase):
 
     layer = layer.INTEGRATION
 
     def setUp(self):
-        super(TestCase, self).setUp()
+        super(IntegrationTestCase, self).setUp()
         self.portal = self.layer['portal']
         testing.setRoles(self.portal, testing.TEST_USER_ID, ['Manager'])
         self.portal.invokeFactory('Folder', 'test-folder')
