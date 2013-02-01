@@ -5,7 +5,7 @@ from zopeskel.base import get_var
 from zopeskel.plone import Plone
 
 class Collective(Plone):
-    """diazo theme"""
+    """Plone addon (collective)"""
     _template_dir = "templates/toutpt_collective"
     summary= u"A collective package"
 
@@ -17,7 +17,7 @@ class Collective(Plone):
 
     def post(self, command, output_dir, vars):
         super(Collective, self).post(command, output_dir, vars)
-        
+
         #remove setup.cfg
         path = os.path.join(output_dir)
         try:
@@ -32,6 +32,14 @@ class Collective(Plone):
                       os.path.join(path, '.gitignore'))
         except OSError, e:
             msg = """WARNING: Could not create .gitignore file: %s"""
+            self.post_run_msg = msg % str(e)
+
+        #add travisyml
+        try:
+            os.rename(os.path.join(path, 'travis.yml'),
+                      os.path.join(path, '.travis.yml'))
+        except OSError, e:
+            msg = """WARNING: Could not create .travis.yml file: %s"""
             self.post_run_msg = msg % str(e)
 
         #remove README.txt (use README.rst)

@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/genericsetup"
+    i18n_domain="${namespace_package}.${package}">
+
+    <upgradeStep
+        source="*"
+        destination="1001"
+        title="Upgrade"
+        description=""
+        profile="${namespace_package}.${package}:default"
+        handler=".upgrades.common"
+        />
+
+</configure>

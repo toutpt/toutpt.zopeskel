@@ -1,5 +1,6 @@
 import transaction
 import unittest2 as unittest
+from zope import interface
 from ${namespace_package}.${package} import testing
 
 
