@@ -1,12 +1,12 @@
 [buildout]
 extends =
-    https://raw.github.com/collective/buildout.plonetest/master/test-4.x.cfg
+    https://raw.github.com/collective/buildout.plonetest/master/travis-4.x.cfg
     https://raw.github.com/collective/buildout.plonetest/master/qa.cfg
 
 package-name = ${namespace_package}.${package}
 package-extras = [test]
 package-src = ${namespace_package}/${package}
-package-pep8-ignores = E501,W404
+package-pep8-ignores = E501
 package-coverage = 80
 parts+=
     createzopecoverage

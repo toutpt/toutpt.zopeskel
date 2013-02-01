@@ -13,4 +13,3 @@ class TestSetup(base.IntegrationTestCase):
 
 def test_suite():
     return unittest.defaultTestLoader.loadTestsFromName(__name__)
-
