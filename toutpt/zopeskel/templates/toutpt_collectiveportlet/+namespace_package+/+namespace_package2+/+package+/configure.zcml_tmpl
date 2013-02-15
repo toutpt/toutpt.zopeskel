@@ -1,0 +1,30 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="${namespace_package}.${namespace_package2}.${package}">
+
+  <include file="upgrades.zcml"/>
+  <include package="Products.CMFCore" file="permissions.zcml"/>
+
+  <genericsetup:registerProfile
+      name="default"
+      title="${namespace_package}.${namespace_package2}.${package}"
+      directory="profiles/default"
+      description='Extension profile for ${namespace_package}.${namespace_package2}.${package}.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <plone:portlet
+     name="${dotted_name}.${portlet_type_name}"
+     interface=".${portlet_filename}.I${portlet_type_name}"
+     assignment=".${portlet_filename}.Assignment"
+     view_permission="zope2.View"
+     edit_permission="cmf.ManagePortal"
+     renderer=".${portlet_filename}.Renderer"
+     addview=".${portlet_filename}.AddForm"
+     editview=".${portlet_filename}.EditForm"
+     />
+
+</configure>
