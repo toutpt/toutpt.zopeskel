@@ -7,6 +7,8 @@ Changelog
 
 - Refactor upgrades of collective and collectivejs skels
 - Make toutpt_collective travis ready
+- Add toutpt_portlet skel
+- Update gitignore of all skels using plone.dotfiles
 
 1.3.3 (2012-05-31)
 ------------------

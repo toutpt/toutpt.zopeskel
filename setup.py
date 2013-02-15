@@ -38,5 +38,6 @@ setup(name='toutpt.zopeskel',
       toutpt_diazobootstrap = toutpt.zopeskel.theme:BootstrapTheme
       toutpt_collective = toutpt.zopeskel.collective:Collective
       toutpt_collectivejs = toutpt.zopeskel.collectivejs:CollectiveJS
+      toutpt_portlet = toutpt.zopeskel.portlet:CollectivePortlet
       """,
       )
